@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.calendar-container {
+  min-height: 90%;
+  width: 94%;
+  height: 90%;
+  margin: 40px 30px;
+  overflow: scroll;
+}
+
+.calendar {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: var(--color-secondary);
+  color: white;
+}
+
+.weekdays,
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weekdays div,
+.days .day {
+  width: calc(100% / 7);
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.weekdays div {
+  background: #ddd;
+}
+
+.day {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-number {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.room {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0.2px;
+  color: #f0f0f0;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.room.available {
+  background-color: var(--color-secondary);
+}
+
+.room.Reserved {
+  background-color: var(--color-reserved);
+}
+
+.room.Checked.In {
+  background-color: var(--color-booked);
+}
+
+.room.Checked.Out {
+  background-color: var(--color-secondary);
+}

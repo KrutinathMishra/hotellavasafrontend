@@ -1,0 +1,121 @@
+.room-page-container {
+  min-height: 90%;
+  width: 94%;
+  height: 90%;
+  margin: 40px 30px;
+  overflow: scroll;
+  display: grid;
+  grid-template-areas:
+    "heading"
+    "content";
+  grid-template-rows: 60px 1fr;
+}
+
+.page-heading {
+  color: var(--color-secondary);
+  /* padding: 0 20px; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  grid-area: heading;
+}
+
+.add-room-button {
+  height: 40px;
+  width: 100px;
+  padding: 8px 4px;
+  background-color: var(--color-secondary); /* Red color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.page-content {
+  grid-area: content;
+  padding: 20px;
+  background-color: var(--color-primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.status-occupied {
+  color: red;
+  font-weight: bold;
+}
+
+.status-available {
+  color: green;
+  font-weight: bold;
+}
+
+.update-form input,
+select {
+  display: block;
+  padding: 14.5px;
+  width: 50%;
+  margin: 1.25rem 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+}
+
+.room-number {
+  display: block;
+  width: 50%;
+  margin: 1.25rem 0;
+  padding: 14.5px;
+  background-color: #fff;
+}
+
+span {
+  font-weight: 700;
+}
+
+.room-button {
+  margin: 0 20px;
+  padding: 10px 20px;
+  background-color: var(--color-secondary); /* Red color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--color-hover); /* Darker red color on hover */
+}
+
+p {
+  margin: 10px 0;
+}

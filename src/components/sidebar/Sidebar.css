@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.sidebar-container {
+  /* font-family: "Inter", sans-serif; */
+  font-weight: 400;
+  font-family: "Inconsolata", monospace;
+  background-color: var(--color-primary);
+  /* border: 2px solid #cfb8b8; */
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: scroll;
+}
+
+.hotel-logo {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-logo img {
+  width: 60%;
+}
+
+.collapse-icon {
+  margin-left: 12.5px;
+  color: var(--color-hover);
+  font-size: 25px;
+}
+
+.collapse-icon:hover {
+  color: #024950;
+}
+
+.sidebar-icon {
+  font-size: 19px;
+}
+
+span {
+  font-size: 19px;
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.sidebar-dashboard {
+  /* display: flex; */
+  /* align-items: center; */
+  background-color: var(--color-primary);
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary);
+}
+
+.sidebar-dashboard:hover {
+  background-color: var(--color-secondary);
+}
+
+.sidebar-dashboard a {
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--color-secondary);
+}
+
+.sidebar-container.collapsed .sidebar-dashboard a {
+  justify-content: center;
+  /* align-items: center; */
+  /* gap: 0; */
+}
+
+.sidebar-dashboard a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  background-color: var(--color-hover);
+}
+
+.divider {
+  color: #0fa4af;
+  border: 1px solid #fff;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  list-style-type: none;
+  border: 1px solid var(--color-secondary);
+}
+
+.main-menu:hover {
+  background-color: var(--color-secondary);
+}
+
+.main-menu a {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.routes {
+  justify-content: space-between;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.sidebar-container.collapsed .sidebar-routes ul li a {
+  justify-content: center;
+}
+
+.sidebar-container.collapsed .sidebar-routes ul li a div .icon {
+  font-size: 22px;
+}
+
+.routes:hover {
+  color: #fff;
+}
+
+.dropdown-inactive {
+  display: block;
+}
+
+.dropdown-active {
+  display: none;
+}
+
+.sub-menu {
+  display: block;
+}
+
+.sub-menu ul li {
+  list-style: none;
+}
+
+::after {
+  display: none;
+}
+
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-list li {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  list-style-type: none;
+  border: 1px solid var(--color-secondary);
+}
+
+.dropdown-list li:hover {
+  background-color: var(--color-secondary);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  margin-left: 10px;
+  color: var(--color-secondary);
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  /* --color-primary: #648cac; */
+  --color-primary: #b8d2db;
+  --color-secondary: #0a5e77;
+
+  --color-booked: #ba5e00;
+  /* --color-booked: #831f20; */
+  /* --color-reserved: #614344; */
+  --color-reserved: #637b83;
+  --color-hover: #637b83;
+
+  --color-navbar: #b8d2db;
+  --color-white: #fff;
+  --color-body: #e4e9f7;
+  --color-light: #e0e0e0;
+
+  --color-one: #12171e;
+}
